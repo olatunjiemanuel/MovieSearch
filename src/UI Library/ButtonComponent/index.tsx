@@ -6,7 +6,7 @@ const ButtonComponent = (props: { buttonText?: string }) => {
   return (
     <View>
       <TouchableOpacity style={styles.buttonCntnr}>
-        <Text>ButtonComponent</Text>
+        <Text style={styles.buttonText}>ButtonText</Text>
         {/* <Text>{buttonText}</Text> */}
       </TouchableOpacity>
     </View>
@@ -17,9 +17,13 @@ export default ButtonComponent;
 
 const styles = StyleSheet.create({
   buttonCntnr: {
-    borderWidth: 1,
-    padding: 10,
+    padding: 20,
     justifyContent: "center",
     borderRadius: 10,
+    backgroundColor: "green",
+  },
+  buttonText: {
+    color: "#fff",
+    fontWeight: "500",
   },
 });
