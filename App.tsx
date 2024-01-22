@@ -1,12 +1,16 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+
+//component imports
 import ButtonComponent from "./src/UI Library/ButtonComponent";
+import FormComponent from "./src/UI Library/FormComponent";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <ButtonComponent />
+      <FormComponent />
     </View>
   );
 }
