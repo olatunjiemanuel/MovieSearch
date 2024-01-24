@@ -49,3 +49,5 @@ const MovieList: ReadonlyArray<{
     poster_url: "https://example.com/posters/culinary_chronicles.jpg",
   },
 ];
+
+export default MovieList;
