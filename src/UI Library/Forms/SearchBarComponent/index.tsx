@@ -10,7 +10,7 @@ import React, { useState, useRef } from "react";
 //icons import
 import { AntDesign } from "@expo/vector-icons";
 
-const FormComponent = (props: { placeHolder?: string }) => {
+const SearchBarComponent = (props: { placeHolder?: string }) => {
   const { placeHolder } = props;
   const searchInputRef = useRef<TextInput>(null);
   const [typing, setTyping] = useState(false);
@@ -46,7 +46,7 @@ const FormComponent = (props: { placeHolder?: string }) => {
   );
 };
 
-export default FormComponent;
+export default SearchBarComponent;
 
 const styles = StyleSheet.create({
   FormCntnr: {
