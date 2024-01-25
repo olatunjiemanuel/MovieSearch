@@ -1,11 +1,25 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  GestureResponderEvent,
+} from "react-native";
 import React from "react";
 
-const ButtonComponent = (props: { buttonText?: string; onPress?: any }) => {
+const ButtonComponent = (props: {
+  buttonText?: string;
+  onPress?: GestureResponderEvent;
+}) => {
   const { buttonText, onPress } = props;
   return (
     <View>
-      <TouchableOpacity style={styles.buttonCntnr} onPress={onPress}>
+      <TouchableOpacity
+        style={styles.buttonCntnr}
+        onPress={() => {
+          onPress;
+        }}
+      >
         <Text style={styles.buttonText}>ButtonText</Text>
         {/* <Text>{buttonText}</Text> */}
       </TouchableOpacity>

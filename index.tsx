@@ -18,9 +18,7 @@ const MovieSearch = () => {
       <View>
         <FlatList
           data={MovieList}
-          keyExtractor={(item) => {
-            item.title;
-          }}
+          keyExtractor={(item) => item.title}
           renderItem={({ item }) => {
             return (
               <View>
