@@ -53,11 +53,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     flexDirection: "row",
     padding: 10,
-    width: 350,
+    width: 375,
     borderRadius: 10,
   },
   searchForm: {
-    width: 300,
+    width: 320,
     height: 30,
   },
   searchIconCntnr: {

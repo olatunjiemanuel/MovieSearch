@@ -20,8 +20,7 @@ const ButtonComponent = (props: {
           onPress;
         }}
       >
-        <Text style={styles.buttonText}>ButtonText</Text>
-        {/* <Text>{buttonText}</Text> */}
+        <Text style={styles.buttonText}>{buttonText}</Text>
       </TouchableOpacity>
     </View>
   );

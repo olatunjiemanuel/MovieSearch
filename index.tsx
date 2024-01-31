@@ -3,6 +3,8 @@ import React from "react";
 
 //component imports
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
+import ButtonComponent from "./src/UI Library/Buttons/ButtonComponent";
+import MovieCard from "./src/UI Library/MovieCard";
 
 //data imoport
 import MovieList from "./src/MovieList/index";
@@ -14,6 +16,9 @@ const MovieSearch = () => {
     <View style={styles.mainCntnr}>
       <View>
         <SearchBarComponent placeHolder="Find a movie" />
+      </View>
+      <View>
+        <MovieCard />
       </View>
       <View>
         <FlatList
@@ -29,7 +34,6 @@ const MovieSearch = () => {
                 <Text>{item.plot}</Text>
                 <Text>{item.poster_url}</Text>
                 <Text>{item.release_year}</Text>
-                <Text>{item.title}</Text>
                 <View style={{ marginTop: 20 }}></View>
               </View>
             );
@@ -47,6 +51,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
+    paddingHorizontal: 20,
     marginTop: Platform.OS === "ios" ? 60 : 20,
   },
 });
