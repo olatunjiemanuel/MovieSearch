@@ -10,7 +10,7 @@ import MovieCard from "./src/UI Library/MovieCard";
 import MovieList from "./src/MovieList/index";
 
 const MovieSearch = () => {
-  console.log(MovieList[0]);
+  // console.log(MovieList[0]);
 
   return (
     <View style={styles.mainCntnr}>
@@ -22,6 +22,7 @@ const MovieSearch = () => {
       </View> */}
       <View>
         <FlatList
+          showsVerticalScrollIndicator={false}
           data={MovieList}
           keyExtractor={(item) => item.title}
           renderItem={({ item }) => {

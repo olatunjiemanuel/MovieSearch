@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 
 //UI imports
-import ButtonComponent from "../Buttons/ButtonComponent";
+import CloseButton from "../Buttons/CloseButton";
 
 const MovieCard = (props: {
   movieTitle?: string;
@@ -31,8 +31,7 @@ const MovieCard = (props: {
       <Modal visible={modalView} transparent animationType="slide">
         <View style={styles.modalBackDrop}>
           <View style={styles.movieCardModal}>
-            <ButtonComponent
-              buttonText="close"
+            <CloseButton
               onPress={() => {
                 setModalView(!modalView);
               }}
