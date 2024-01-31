@@ -17,9 +17,9 @@ const MovieSearch = () => {
       <View>
         <SearchBarComponent placeHolder="Find a movie" />
       </View>
-      <View>
+      {/* <View>
         <MovieCard />
-      </View>
+      </View> */}
       <View>
         <FlatList
           data={MovieList}
@@ -27,14 +27,22 @@ const MovieSearch = () => {
           renderItem={({ item }) => {
             return (
               <View>
-                <Text>{item.title}</Text>
+                <MovieCard
+                  movieTitle={item.title}
+                  genre={item.genre}
+                  release_year={item.release_year}
+                  director={item.director}
+                  cast={item.cast}
+                  plot={item.plot}
+                />
+                {/* <Text>{item.title}</Text>
                 <Text>{item.cast}</Text>
                 <Text>{item.director}</Text>
                 <Text>{item.genre}</Text>
                 <Text>{item.plot}</Text>
                 <Text>{item.poster_url}</Text>
                 <Text>{item.release_year}</Text>
-                <View style={{ marginTop: 20 }}></View>
+                <View style={{ marginTop: 20 }}></View> */}
               </View>
             );
           }}

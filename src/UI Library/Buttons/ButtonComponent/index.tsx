@@ -3,23 +3,19 @@ import {
   Text,
   TouchableOpacity,
   View,
-  GestureResponderEvent,
+  // GestureResponderEvent,
 } from "react-native";
 import React from "react";
 
 const ButtonComponent = (props: {
   buttonText?: string;
-  onPress?: GestureResponderEvent;
+  onPress?: any;
+  // onPress?: GestureResponderEvent;
 }) => {
   const { buttonText, onPress } = props;
   return (
     <View>
-      <TouchableOpacity
-        style={styles.buttonCntnr}
-        onPress={() => {
-          onPress;
-        }}
-      >
+      <TouchableOpacity style={styles.buttonCntnr} onPress={onPress}>
         <Text style={styles.buttonText}>{buttonText}</Text>
       </TouchableOpacity>
     </View>
