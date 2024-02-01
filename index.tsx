@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Platform, FlatList } from "react-native";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 //component imports
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
@@ -15,6 +15,8 @@ import { SearchMovies } from "./src/MovieList/index";
 const MovieSearch = () => {
   // console.log(MovieList[0]);
 
+  const [searchQuery, setSearchQuery] = useState(null);
+
   const Search = () => {
     const listsearch = SearchMovies("science");
     console.log(listsearch);
@@ -26,7 +28,7 @@ const MovieSearch = () => {
 
   return (
     <View style={styles.mainCntnr}>
-      <View>
+      <View style={styles.searchCntnr}>
         <SearchBarComponent placeHolder="Find a movie" />
       </View>
       {/* <View>
@@ -48,14 +50,6 @@ const MovieSearch = () => {
                   cast={item.cast}
                   plot={item.plot}
                 />
-                {/* <Text>{item.title}</Text>
-                <Text>{item.cast}</Text>
-                <Text>{item.director}</Text>
-                <Text>{item.genre}</Text>
-                <Text>{item.plot}</Text>
-                <Text>{item.poster_url}</Text>
-                <Text>{item.release_year}</Text>
-                <View style={{ marginTop: 20 }}></View> */}
               </View>
             );
           }}
@@ -74,5 +68,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 20,
     marginTop: Platform.OS === "ios" ? 60 : 20,
+  },
+  searchCntnr: {
+    marginBottom: 20,
   },
 });
