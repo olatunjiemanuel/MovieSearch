@@ -50,4 +50,15 @@ const MovieList: ReadonlyArray<{
   },
 ];
 
+export const SearchMovies = (query: string) => {
+  const results = MovieList.filter(
+    (movies) =>
+      movies.title.toLowerCase().includes(query) ||
+      movies.genre.toLowerCase().includes(query) ||
+      movies.cast.includes(query) ||
+      movies.plot.includes(query)
+  );
+  return results;
+};
+
 export default MovieList;

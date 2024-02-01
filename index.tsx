@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Platform, FlatList } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 
 //component imports
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
@@ -9,8 +9,20 @@ import MovieCard from "./src/UI Library/MovieCard";
 //data imoport
 import MovieList from "./src/MovieList/index";
 
+//function import
+import { SearchMovies } from "./src/MovieList/index";
+
 const MovieSearch = () => {
   // console.log(MovieList[0]);
+
+  const Search = () => {
+    const listsearch = SearchMovies("science");
+    console.log(listsearch);
+  };
+
+  useEffect(() => {
+    Search();
+  }, []);
 
   return (
     <View style={styles.mainCntnr}>
