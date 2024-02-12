@@ -10,8 +10,13 @@ import React, { useState, useRef } from "react";
 //icons import
 import { AntDesign } from "@expo/vector-icons";
 
-const SearchBarComponent = (props: { placeHolder?: string }) => {
-  const { placeHolder } = props;
+const SearchBarComponent = (props: {
+  placeHolder?: string;
+  searchValue?: string;
+  handleSubmit?: any;
+  onChangeText?: any;
+}) => {
+  const { placeHolder, handleSubmit, searchValue, onChangeText } = props;
   const searchInputRef = useRef<TextInput>(null);
   const [typing, setTyping] = useState(false);
 
@@ -21,7 +26,10 @@ const SearchBarComponent = (props: { placeHolder?: string }) => {
         <TextInput
           style={styles.searchForm}
           placeholder={placeHolder}
+          onSubmitEditing={handleSubmit}
           onFocus={() => setTyping(true)}
+          // value={searchValue}
+          onChangeText={onChangeText}
           onBlur={() => {
             setTyping(false);
           }}

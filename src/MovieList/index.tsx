@@ -51,12 +51,14 @@ const MovieList: ReadonlyArray<{
 ];
 
 export const SearchMovies = (query: string) => {
+  const lowerCaseQuery = query.toLowerCase();
   const results = MovieList.filter(
     (movies) =>
-      movies.title.toLowerCase().includes(query) ||
-      movies.genre.toLowerCase().includes(query) ||
-      movies.cast.includes(query) ||
-      movies.plot.includes(query)
+      movies.title.toLowerCase().includes(lowerCaseQuery) ||
+      movies.genre.toLowerCase().includes(lowerCaseQuery) ||
+      movies.cast.includes(lowerCaseQuery) ||
+      movies.plot.toLowerCase().includes(lowerCaseQuery) ||
+      movies.release_year.toString().toLowerCase().includes(lowerCaseQuery)
   );
   return results;
 };

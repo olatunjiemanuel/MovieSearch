@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 //component imports
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
-import ButtonComponent from "./src/UI Library/Buttons/ButtonComponent";
 import MovieCard from "./src/UI Library/MovieCard";
 
 //data imoport
@@ -13,31 +12,34 @@ import MovieList from "./src/MovieList/index";
 import { SearchMovies } from "./src/MovieList/index";
 
 const MovieSearch = () => {
-  // console.log(MovieList[0]);
+  // State management
+  const [searchQuery, setSearchQuery] = useState("");
+  const [movieData, setMovieData] = useState(MovieList);
 
-  const [searchQuery, setSearchQuery] = useState(null);
-
+  // Search Query
   const Search = () => {
-    const listsearch = SearchMovies("science");
-    console.log(listsearch);
+    const searchResults = SearchMovies(searchQuery);
+    setMovieData(searchResults);
   };
-
-  useEffect(() => {
-    Search();
-  }, []);
 
   return (
     <View style={styles.mainCntnr}>
       <View style={styles.searchCntnr}>
-        <SearchBarComponent placeHolder="Find a movie" />
+        <SearchBarComponent
+          placeHolder="Find a movie"
+          onChangeText={(value: string) => {
+            setSearchQuery(value);
+            console.log(value);
+          }}
+          handleSubmit={() => {
+            Search();
+          }}
+        />
       </View>
-      {/* <View>
-        <MovieCard />
-      </View> */}
       <View>
         <FlatList
           showsVerticalScrollIndicator={false}
-          data={MovieList}
+          data={movieData}
           keyExtractor={(item) => item.title}
           renderItem={({ item }) => {
             return (
