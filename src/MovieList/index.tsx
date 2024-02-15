@@ -18,16 +18,16 @@ const MovieList: ReadonlyArray<{
     plot: "In a distant galaxy, a group of explorers embarks on an epic journey to save their dying star system.",
     poster_url: "https://example.com/posters/galactic_odyssey.jpg",
   },
-  {
-    title: "Midnight Melodies",
-    genre: "Drama",
-    release_year: 2023,
-    rating: 7.8,
-    director: "Olivia Harmony",
-    cast: ["Ethan Moonlight", "Sophia Serenade", "Liam Crescendo"],
-    plot: "A struggling musician finds solace in the vibrant nightlife of a city, discovering love and redemption through music.",
-    poster_url: "https://example.com/posters/midnight_melodies.jpg",
-  },
+  // {
+  //   title: "Midnight Melodies",
+  //   genre: "Drama",
+  //   release_year: 2023,
+  //   rating: 7.8,
+  //   director: "Olivia Harmony",
+  //   cast: ["Ethan Moonlight", "Sophia Serenade", "Liam Crescendo"],
+  //   plot: "A struggling musician finds solace in the vibrant nightlife of a city, discovering love and redemption through music.",
+  //   poster_url: "https://example.com/posters/midnight_melodies.jpg",
+  // },
   {
     title: "Mystery Manor",
     genre: "Mystery",
@@ -58,7 +58,7 @@ export const SearchMovies = (query: string) => {
       movies.genre.toLowerCase().includes(lowerCaseQuery) ||
       movies.cast.includes(lowerCaseQuery) ||
       movies.plot.toLowerCase().includes(lowerCaseQuery) ||
-      movies.release_year.toString().toLowerCase().includes(lowerCaseQuery)
+      movies.release_year.toString().toLowerCase().includes(lowerCaseQuery),
   );
   return results;
 };
