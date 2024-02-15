@@ -22,6 +22,8 @@ const MovieSearch = () => {
     setMovieData(searchResults);
   };
   const a;
+  const a;
+  const a;
   return (
     <View style={styles.mainCntnr}>
       <View style={styles.searchCntnr}>
