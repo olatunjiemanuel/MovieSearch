@@ -13,6 +13,7 @@ const ButtonComponent = (props: {
   // onPress?: GestureResponderEvent;
 }) => {
   const { buttonText, onPress } = props;
+
   return (
     <View>
       <TouchableOpacity style={styles.buttonCntnr} onPress={onPress}>

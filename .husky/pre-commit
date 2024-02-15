@@ -1,3 +1,2 @@
 . '/Users/olatunji/Desktop/Code/MovieSearch/.husky/_/husky.sh'
 
-yarn lint-staged 
