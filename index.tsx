@@ -21,7 +21,7 @@ const MovieSearch = () => {
     const searchResults = SearchMovies(searchQuery);
     setMovieData(searchResults);
   };
-
+  const a;
   return (
     <View style={styles.mainCntnr}>
       <View style={styles.searchCntnr}>
