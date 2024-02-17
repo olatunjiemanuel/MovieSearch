@@ -1,10 +1,9 @@
-import { StyleSheet, Text, View, Platform, FlatList } from "react-native";
-import React, { useEffect, useState } from "react";
+import { StyleSheet, View, Platform, FlatList } from "react-native";
+import React, { useState } from "react";
 
 //component imports
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
 import MovieCard from "./src/UI Library/MovieCard";
-import ButtonComponent from "./src/UI Library/Buttons/ButtonComponent";
 
 //data imoport
 import MovieList from "./src/MovieList/index";
