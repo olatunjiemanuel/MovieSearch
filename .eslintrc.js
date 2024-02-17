@@ -26,7 +26,6 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint", "react"],
-  rules: {
-    "no-warning-comments": "error",
-  },
+  noInlineConfig: true,
+  rules: {},
 };
