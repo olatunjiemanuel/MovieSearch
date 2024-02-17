@@ -21,6 +21,7 @@ const MovieCard = (props: {
 }) => {
   const [modalView, setModalView] = useState(false);
   const { movieTitle, genre, release_year, director, cast, plot } = props;
+
   return (
     <TouchableOpacity
       style={styles.movieCardCntnr}

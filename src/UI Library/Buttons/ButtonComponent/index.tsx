@@ -7,9 +7,9 @@ import {
 } from "react-native";
 import React from "react";
 
-const ButtonComponent = (props: {
+const ButtonComponent = <T extends () => void>(props: {
   buttonText?: string;
-  onPress?: any;
+  onPress?: T;
   // onPress?: GestureResponderEvent;
 }) => {
   const { buttonText, onPress } = props;
