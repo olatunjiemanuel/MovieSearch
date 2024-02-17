@@ -1,7 +1,6 @@
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import React, { useState, useRef } from "react";
 
-//icons import
 import { AntDesign } from "@expo/vector-icons";
 
 const SearchBarComponent = <
@@ -24,7 +23,6 @@ const SearchBarComponent = <
           placeholder={placeHolder}
           onSubmitEditing={handleSubmit}
           onFocus={() => setTyping(true)}
-          // value={searchValue}
           onChangeText={onChangeText}
           onBlur={() => {
             setTyping(false);

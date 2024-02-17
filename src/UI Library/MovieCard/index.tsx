@@ -8,7 +8,6 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 
-//UI imports
 import CloseButton from "../Buttons/CloseButton";
 
 const MovieCard = (props: {
