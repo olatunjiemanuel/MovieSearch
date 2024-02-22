@@ -1,10 +1,9 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity } from "react-native";
 import React from "react";
 
-// UI Imports
 import { AntDesign } from "@expo/vector-icons";
 
-const CloseButton = (props: { onPress: any }) => {
+const CloseButton = <t extends () => void>(props: { onPress: t }) => {
   const { onPress } = props;
   return (
     <TouchableOpacity onPress={onPress}>
@@ -14,5 +13,3 @@ const CloseButton = (props: { onPress: any }) => {
 };
 
 export default CloseButton;
-
-const styles = StyleSheet.create({});

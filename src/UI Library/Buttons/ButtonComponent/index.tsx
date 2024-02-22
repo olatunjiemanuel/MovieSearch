@@ -1,16 +1,9 @@
-import {
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  // GestureResponderEvent,
-} from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 
 const ButtonComponent = <T extends () => void>(props: {
   buttonText?: string;
   onPress?: T;
-  // onPress?: GestureResponderEvent;
 }) => {
   const { buttonText, onPress } = props;
 
