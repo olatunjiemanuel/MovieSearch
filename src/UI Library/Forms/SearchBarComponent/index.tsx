@@ -1,22 +1,17 @@
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import React, { useState, useRef } from "react";
 
-//icons import
 import { AntDesign } from "@expo/vector-icons";
 
-const SearchBarComponent = (props: {
+const SearchBarComponent = <
+  t extends () => void,
+  u extends (arg: string) => void,
+>(props: {
   placeHolder?: string;
-  searchValue?: string;
-  handleSubmit?: any;
-  onChangeText?: any;
+  handleSubmit?: t;
+  onChangeText?: u;
 }) => {
-  const { placeHolder, handleSubmit, searchValue, onChangeText } = props;
+  const { placeHolder, handleSubmit, onChangeText } = props;
   const searchInputRef = useRef<TextInput>(null);
   const [typing, setTyping] = useState(false);
 
@@ -28,7 +23,6 @@ const SearchBarComponent = (props: {
           placeholder={placeHolder}
           onSubmitEditing={handleSubmit}
           onFocus={() => setTyping(true)}
-          // value={searchValue}
           onChangeText={onChangeText}
           onBlur={() => {
             setTyping(false);

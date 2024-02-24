@@ -8,7 +8,6 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 
-//UI imports
 import CloseButton from "../Buttons/CloseButton";
 
 const MovieCard = (props: {
@@ -21,6 +20,7 @@ const MovieCard = (props: {
 }) => {
   const [modalView, setModalView] = useState(false);
   const { movieTitle, genre, release_year, director, cast, plot } = props;
+
   return (
     <TouchableOpacity
       style={styles.movieCardCntnr}

@@ -58,7 +58,7 @@ export const SearchMovies = (query: string) => {
       movies.genre.toLowerCase().includes(lowerCaseQuery) ||
       movies.cast.includes(lowerCaseQuery) ||
       movies.plot.toLowerCase().includes(lowerCaseQuery) ||
-      movies.release_year.toString().toLowerCase().includes(lowerCaseQuery)
+      movies.release_year.toString().toLowerCase().includes(lowerCaseQuery),
   );
   return results;
 };

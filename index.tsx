@@ -1,22 +1,17 @@
-import { StyleSheet, Text, View, Platform, FlatList } from "react-native";
-import React, { useEffect, useState } from "react";
+import { StyleSheet, View, Platform, FlatList } from "react-native";
+import React, { useState } from "react";
 
-//component imports
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
 import MovieCard from "./src/UI Library/MovieCard";
 
-//data imoport
 import MovieList from "./src/MovieList/index";
 
-//function import
 import { SearchMovies } from "./src/MovieList/index";
 
 const MovieSearch = () => {
-  // State management
   const [searchQuery, setSearchQuery] = useState("");
   const [movieData, setMovieData] = useState(MovieList);
 
-  // Search Query
   const Search = () => {
     const searchResults = SearchMovies(searchQuery);
     setMovieData(searchResults);
