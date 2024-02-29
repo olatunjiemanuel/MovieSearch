@@ -1,9 +1,5 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Platform } from "react-native";
-
-//component imports
-import ButtonComponent from "./src/UI Library/Buttons/ButtonComponent";
-import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
+import React from "react";
+import { StyleSheet, View } from "react-native";
 
 //app import
 import MovieSearch from "./index";
@@ -11,9 +7,6 @@ import MovieSearch from "./index";
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Text>Open up App.tsx to start working on your app!</Text>
-      <ButtonComponent />
-      <SearchBarComponent /> */}
       <MovieSearch />
     </View>
   );
