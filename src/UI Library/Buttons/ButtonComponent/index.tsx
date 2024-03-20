@@ -9,7 +9,11 @@ const ButtonComponent = <T extends () => void>(props: {
 
   return (
     <View>
-      <TouchableOpacity style={styles.buttonCntnr} onPress={onPress}>
+      <TouchableOpacity
+        testID="Button"
+        style={styles.buttonCntnr}
+        onPress={onPress}
+      >
         <Text style={styles.buttonText}>{buttonText}</Text>
       </TouchableOpacity>
     </View>

@@ -23,6 +23,7 @@ const MovieCard = (props: {
 
   return (
     <TouchableOpacity
+      testID="movieCardModal"
       style={styles.movieCardCntnr}
       onPress={() => {
         setModalView(true);
