@@ -19,6 +19,7 @@ const SearchBarComponent = <
     <View style={styles.FormCntnr}>
       <View>
         <TextInput
+          testID="searchBar"
           style={styles.searchForm}
           placeholder={placeHolder}
           onSubmitEditing={handleSubmit}
@@ -33,6 +34,7 @@ const SearchBarComponent = <
       <View style={styles.searchIconCntnr}>
         {typing ? (
           <TouchableOpacity
+            testID="clearSearchButton"
             onPress={() => {
               searchInputRef.current?.clear();
               searchInputRef.current?.blur();

@@ -3,6 +3,10 @@
 # dependencies
 node_modules/
 
+*.snap
+*.lock
+*.gitignore
+
 # Expo
 .expo/
 dist/

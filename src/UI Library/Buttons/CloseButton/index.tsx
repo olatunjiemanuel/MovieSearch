@@ -6,7 +6,7 @@ import { AntDesign } from "@expo/vector-icons";
 const CloseButton = <t extends () => void>(props: { onPress: t }) => {
   const { onPress } = props;
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} testID="closeButton">
       <AntDesign name="close" size={24} color="black" />
     </TouchableOpacity>
   );
