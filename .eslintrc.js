@@ -13,8 +13,9 @@ module.exports = {
     {
       env: {
         node: true,
+        jest: true,
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: [".eslintrc.{js,cjs,ts,tsx}"],
       parserOptions: {
         sourceType: "script",
       },
@@ -28,4 +29,9 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   noInlineConfig: true,
   rules: {},
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };
