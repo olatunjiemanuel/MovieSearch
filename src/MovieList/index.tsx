@@ -63,4 +63,12 @@ export const SearchMovies = (query: string) => {
   return results;
 };
 
+export const FilterMovies = (query: string) => {
+  const lowerCaseQuery = query.toLowerCase();
+  const results = MovieList.filter((movies) =>
+    movies.genre.toLowerCase().includes(lowerCaseQuery),
+  );
+  return results;
+};
+
 export default MovieList;

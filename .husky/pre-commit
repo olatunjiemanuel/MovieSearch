@@ -1,2 +1,4 @@
 . '/Users/olatunji/Desktop/Code/MovieSearch/.husky/_/husky.sh'
 yarn lint-staged --no-stash
+yarn run test
+yarn run coverage

@@ -7,6 +7,7 @@ import MovieCard from "./src/UI Library/MovieCard";
 import MovieList from "./src/MovieList/index";
 
 import { SearchMovies } from "./src/MovieList/index";
+import CategorySlider from "./src/UI Library/CategorySlider";
 
 const MovieSearch = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -31,6 +32,10 @@ const MovieSearch = () => {
           }}
         />
       </View>
+      <View>
+        <CategorySlider />
+      </View>
+
       <View>
         <FlatList
           showsVerticalScrollIndicator={false}
@@ -62,11 +67,10 @@ const styles = StyleSheet.create({
   mainCntnr: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
     paddingHorizontal: 20,
     marginTop: Platform.OS === "ios" ? 60 : 20,
   },
   searchCntnr: {
-    marginBottom: 20,
+    marginBottom: 10,
   },
 });
