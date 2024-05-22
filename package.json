@@ -19,10 +19,16 @@
     "collectCoverage": false,
     "coverageThreshold": {
       "global": {
-        "branches": 20,
-        "functions": 20,
-        "lines": 20,
-        "statements": 20
+        "branches": 40,
+        "functions": 60,
+        "lines": 70,
+        "statements": 70
+      },
+      "./src/MovieList/index.tsx": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
       }
     }
   },

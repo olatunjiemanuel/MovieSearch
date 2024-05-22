@@ -8,13 +8,14 @@ describe("testing the search bar component", () => {
   it("tests that user input and submit function works", () => {
     const mockOnSubmit = jest.fn();
     const mockOnChangeText = jest.fn();
+    const placeHolder = "Search...";
 
     const { getByTestId } = render(
       <SearchBarComponent
-        placeHolder="Search..."
+        placeHolder={placeHolder}
         handleSubmit={mockOnSubmit}
         onChangeText={mockOnChangeText}
-      />
+      />,
     );
 
     const searchBarInput = getByTestId("searchBar");
@@ -22,6 +23,7 @@ describe("testing the search bar component", () => {
     fireEvent.changeText(searchBarInput, "example search");
 
     expect(mockOnChangeText).toHaveBeenCalled();
+    expect(placeHolder).toBe("Search...");
 
     fireEvent(searchBarInput, "submitEditing");
 
