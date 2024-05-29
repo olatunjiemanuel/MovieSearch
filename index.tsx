@@ -1,5 +1,5 @@
 import { StyleSheet, View, Platform, FlatList } from "react-native";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import SearchBarComponent from "./src/UI Library/Forms/SearchBarComponent";
 import MovieCard from "./src/UI Library/MovieCard";
@@ -7,6 +7,7 @@ import MovieCard from "./src/UI Library/MovieCard";
 import MovieList from "./src/MovieList/index";
 
 import { SearchMovies } from "./src/MovieList/index";
+import CategorySelector from "./src/UI Library/CategorySelector";
 
 const MovieSearch = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -17,6 +18,10 @@ const MovieSearch = () => {
     setMovieData(searchResults);
   };
 
+  useEffect(() => {
+    Search();
+  }, [searchQuery]);
+
   return (
     <View style={styles.mainCntnr}>
       <View style={styles.searchCntnr}>
@@ -24,13 +29,20 @@ const MovieSearch = () => {
           placeHolder="Find a movie"
           onChangeText={(value: string) => {
             setSearchQuery(value);
-            console.log(value);
-          }}
-          handleSubmit={() => {
-            Search();
           }}
         />
       </View>
+      <View>
+        <CategorySelector
+          selectedCategory={searchQuery}
+          onSelectCategory={(category) => {
+            searchQuery === category
+              ? setSearchQuery("")
+              : setSearchQuery(category);
+          }}
+        />
+      </View>
+
       <View>
         <FlatList
           showsVerticalScrollIndicator={false}
@@ -62,11 +74,10 @@ const styles = StyleSheet.create({
   mainCntnr: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
     paddingHorizontal: 20,
     marginTop: Platform.OS === "ios" ? 60 : 20,
   },
   searchCntnr: {
-    marginBottom: 20,
+    marginBottom: 10,
   },
 });

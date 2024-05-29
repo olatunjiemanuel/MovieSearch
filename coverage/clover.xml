@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1716409973456" clover="3.2.0">
+  <project timestamp="1716409973456" name="All files">
+    <metrics statements="63" coveredstatements="54" conditionals="15" coveredconditionals="9" methods="26" coveredmethods="18" elements="104" coveredelements="81" complexity="0" loc="63" ncloc="63" packages="8" files="9" classes="9"/>
+    <package name="MovieSearch">
+      <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="6"/>
+      <file name="App.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/App.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/index.tsx">
+        <metrics statements="14" coveredstatements="12" conditionals="4" coveredconditionals="1" methods="7" coveredmethods="5"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="9" type="stmt"/>
+        <line num="52" count="8" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.MovieList">
+      <metrics statements="11" coveredstatements="11" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/MovieList/index.tsx">
+        <metrics statements="11" coveredstatements="11" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="5" type="stmt"/>
+        <line num="55" count="5" type="stmt"/>
+        <line num="57" count="20" type="cond" truecount="5" falsecount="0"/>
+        <line num="63" count="5" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+        <line num="69" count="12" type="stmt"/>
+        <line num="71" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.UI Library.Buttons.ButtonComponent">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/Buttons/ButtonComponent/index.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.UI Library.Buttons.CloseButton">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/Buttons/CloseButton/index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.UI Library.CategoryComponent">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/CategoryComponent/index.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="12" count="9" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.UI Library.CategorySelector">
+      <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/CategorySelector/index.tsx">
+        <metrics statements="8" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.UI Library.Forms.SearchBarComponent">
+      <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/Forms/SearchBarComponent/index.tsx">
+        <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="MovieSearch.src.UI Library.MovieCard">
+      <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/MovieCard/index.tsx">
+        <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="76" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

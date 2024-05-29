@@ -3,15 +3,17 @@ import React, { useState, useRef } from "react";
 
 import { AntDesign } from "@expo/vector-icons";
 
-const SearchBarComponent = <
-  t extends () => void,
-  u extends (arg: string) => void,
->(props: {
+interface SearchBarComponentProps {
   placeHolder?: string;
-  handleSubmit?: t;
-  onChangeText?: u;
+  handleSubmit?: () => void;
+  onChangeText?: () => void;
+}
+
+const SearchBarComponent: React.FC<SearchBarComponentProps> = ({
+  placeHolder,
+  handleSubmit,
+  onChangeText,
 }) => {
-  const { placeHolder, handleSubmit, onChangeText } = props;
   const searchInputRef = useRef<TextInput>(null);
   const [typing, setTyping] = useState(false);
 

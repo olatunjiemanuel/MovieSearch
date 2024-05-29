@@ -1,12 +1,15 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 
-const ButtonComponent = <T extends () => void>(props: {
+interface ButtonComponentProps {
   buttonText?: string;
-  onPress?: T;
-}) => {
-  const { buttonText, onPress } = props;
+  onPress?: () => void;
+}
 
+const ButtonComponent: React.FC<ButtonComponentProps> = ({
+  buttonText,
+  onPress,
+}) => {
   return (
     <View>
       <TouchableOpacity
