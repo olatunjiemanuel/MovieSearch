@@ -35,7 +35,7 @@
   "dependencies": {
     "@eslint/create-config": "^0.4.6",
     "eslint": "^8.56.0",
-    "expo": "~50.0.2",
+    "expo": "50",
     "expo-status-bar": "~1.11.1",
     "husky": "^9.0.11",
     "jest": "^29.3.1",

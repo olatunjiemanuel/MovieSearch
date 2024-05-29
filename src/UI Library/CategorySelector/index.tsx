@@ -2,12 +2,15 @@ import { StyleSheet, View, FlatList } from "react-native";
 import React from "react";
 import CategoryComponent from "../CategoryComponent";
 
-const CategorySelector = <T extends (t: string) => void>(props: {
+interface CategorySelectorProps {
   selectedCategory?: string;
-  onSelectCategory: T;
-}) => {
-  const { selectedCategory, onSelectCategory } = props;
+  onSelectCategory: (t: string) => void;
+}
 
+const CategorySelector: React.FC<CategorySelectorProps> = ({
+  selectedCategory,
+  onSelectCategory,
+}) => {
   const Categories = ["Science", "Drama", "Mystery", "Comedy"];
 
   return (
@@ -16,14 +19,12 @@ const CategorySelector = <T extends (t: string) => void>(props: {
         horizontal
         showsVerticalScrollIndicator={false}
         data={Categories}
-        keyExtractor={(index) => index.toString()}
+        keyExtractor={(item) => item.toString()}
         renderItem={({ item }) => (
           <CategoryComponent
             selected={selectedCategory === item}
             CategoryText={item}
-            onPress={() => {
-              onSelectCategory(item);
-            }}
+            onPress={() => onSelectCategory(item)}
           />
         )}
       />

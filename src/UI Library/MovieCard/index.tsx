@@ -10,16 +10,24 @@ import React, { useState } from "react";
 
 import CloseButton from "../Buttons/CloseButton";
 
-const MovieCard = (props: {
+interface MovieCardProps {
   movieTitle?: string;
   genre?: string;
   release_year?: number;
   director?: string;
   cast?: [cast1: string, cast2: string, cast3: string];
   plot?: string;
+}
+
+const MovieCard: React.FC<MovieCardProps> = ({
+  movieTitle,
+  genre,
+  release_year,
+  director,
+  cast,
+  plot,
 }) => {
   const [modalView, setModalView] = useState(false);
-  const { movieTitle, genre, release_year, director, cast, plot } = props;
 
   return (
     <TouchableOpacity

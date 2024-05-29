@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716409553660" clover="3.2.0">
-  <project timestamp="1716409553660" name="All files">
+<coverage generated="1716409973456" clover="3.2.0">
+  <project timestamp="1716409973456" name="All files">
     <metrics statements="63" coveredstatements="54" conditionals="15" coveredconditionals="9" methods="26" coveredmethods="18" elements="104" coveredelements="81" complexity="0" loc="63" ncloc="63" packages="8" files="9" classes="9"/>
     <package name="MovieSearch">
       <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="1" methods="8" coveredmethods="6"/>
@@ -81,10 +81,10 @@
         <line num="9" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
-        <line num="20" count="9" type="stmt"/>
-        <line num="22" count="8" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
       </file>
     </package>
     <package name="MovieSearch.src.UI Library.Forms.SearchBarComponent">

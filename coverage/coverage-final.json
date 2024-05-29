@@ -528,7 +528,7 @@
     "statementMap": {
       "0": {
         "start": { "line": 5, "column": 25 },
-        "end": { "line": 34, "column": 1 }
+        "end": { "line": 32, "column": 1 }
       },
       "1": {
         "start": { "line": 9, "column": 49 },
@@ -540,23 +540,23 @@
       },
       "3": {
         "start": { "line": 13, "column": 2 },
-        "end": { "line": 33, "column": 4 }
+        "end": { "line": 31, "column": 4 }
       },
       "4": {
-        "start": { "line": 20, "column": 35 },
-        "end": { "line": 20, "column": 51 }
+        "start": { "line": 19, "column": 33 },
+        "end": { "line": 19, "column": 49 }
       },
       "5": {
-        "start": { "line": 22, "column": 12 },
-        "end": { "line": 28, "column": 14 }
+        "start": { "line": 21, "column": 10 },
+        "end": { "line": 27, "column": 12 }
       },
       "6": {
-        "start": { "line": 26, "column": 16 },
-        "end": { "line": 26, "column": 39 }
+        "start": { "line": 25, "column": 14 },
+        "end": { "line": 25, "column": 37 }
       },
       "7": {
-        "start": { "line": 38, "column": 15 },
-        "end": { "line": 49, "column": 2 }
+        "start": { "line": 36, "column": 15 },
+        "end": { "line": 47, "column": 2 }
       }
     },
     "fnMap": {
@@ -568,45 +568,45 @@
         },
         "loc": {
           "start": { "line": 8, "column": 6 },
-          "end": { "line": 34, "column": 1 }
+          "end": { "line": 32, "column": 1 }
         },
         "line": 8
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
-          "start": { "line": 20, "column": 24 },
-          "end": { "line": 20, "column": 25 }
+          "start": { "line": 19, "column": 22 },
+          "end": { "line": 19, "column": 23 }
         },
         "loc": {
-          "start": { "line": 20, "column": 35 },
-          "end": { "line": 20, "column": 51 }
+          "start": { "line": 19, "column": 33 },
+          "end": { "line": 19, "column": 49 }
         },
-        "line": 20
+        "line": 19
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
-          "start": { "line": 21, "column": 22 },
-          "end": { "line": 21, "column": 23 }
+          "start": { "line": 20, "column": 20 },
+          "end": { "line": 20, "column": 21 }
         },
         "loc": {
-          "start": { "line": 22, "column": 12 },
-          "end": { "line": 28, "column": 14 }
+          "start": { "line": 21, "column": 10 },
+          "end": { "line": 27, "column": 12 }
         },
-        "line": 22
+        "line": 21
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
-          "start": { "line": 25, "column": 23 },
-          "end": { "line": 25, "column": 24 }
+          "start": { "line": 24, "column": 21 },
+          "end": { "line": 24, "column": 22 }
         },
         "loc": {
-          "start": { "line": 25, "column": 29 },
-          "end": { "line": 27, "column": 15 }
+          "start": { "line": 24, "column": 27 },
+          "end": { "line": 26, "column": 13 }
         },
-        "line": 25
+        "line": 24
       }
     },
     "branchMap": {},
@@ -614,7 +614,7 @@
     "f": { "0": 2, "1": 9, "2": 8, "3": 0 },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "0cdb2410d833222564f3cf22fe84425d3359c439"
+    "hash": "b17ae221396a31ae6833bc093f0cd96415c28ea0"
   },
   "/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/Forms/SearchBarComponent/index.tsx": {
     "path": "/Users/olatunji/Desktop/Code/MovieSearch/src/UI Library/Forms/SearchBarComponent/index.tsx",

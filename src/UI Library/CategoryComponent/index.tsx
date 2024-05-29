@@ -1,14 +1,17 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 
-const CategoryComponent = <T extends () => void>(props: {
+interface CategoryComponentProps {
   CategoryText?: string;
-  backgroundColor?: string;
-  onPress?: T;
+  onPress?: () => void;
   selected?: boolean;
-}) => {
-  const { CategoryText, onPress, selected } = props;
+}
 
+const CategoryComponent: React.FC<CategoryComponentProps> = ({
+  CategoryText,
+  onPress,
+  selected,
+}) => {
   return (
     <TouchableOpacity
       testID="CategoryComponent"
